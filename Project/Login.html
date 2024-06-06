@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up Page</title>
+    <!-- <link rel="stylesheet" href="./html/Signup.css" /> -->
+    <link rel="icon" href="C:\Users\Amit\Downloads\b.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../navbar/upper.css" />
+    <link rel="stylesheet" href="../newIndex.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+  </head>
+
+  <body>
+    <nav id="main_nav">
+      <div class="top_part">
+        <div class="location">
+          <a href="http://www.google.com">
+            <i class="fa fa-map-marker" style="font-size: 24px"></i>
+            STORE & SPA LOCATOR
+          </a>
+        </div>
+        <div class="logo">
+          <a href="">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/bluemercury-logo_1216x.png?v=1648743182"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="nav_item">
+          <div class="wishlist">
+            <i class="fa fa-heart" style="font-size: 22px"></i>
+            <span> Wishlist</span>
+          </div>
+          <div class="search">
+            <i
+              class="fa fa-search"
+              style="font-size: 22px"
+              aria-hidden="true"
+            ></i>
+            <span>Search</span>
+          </div>
+          <div class="signin">
+            <i class="fa fa-user-circle" style="font-size: 22px"></i>
+            <a href="./Signup.html"><span>Sign in/up</span></a>
+          </div>
+          <div class="bag">
+            <i
+              class="fa fa-shopping-bag"
+              style="font-size: 22px"
+              aria-hidden="true"
+            ></i>
+            <a href="../Bag page/ProductPage.html"><span> Bag</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- <a href="../BlueRewards/index.html"></a> -->
+      <div id="dropdown">
+        <div
+          onmouseover="showshop()"
+          onclick="window.location.href='../projectData copy/HTML/Shop.html'"
+          ;
+          id="shop"
+        >
+          SHOP
+        </div>
+
+        <div
+          onmouseover="shownew()"
+          onclick="window.location.href='../NewArrival/newArrival.html'"
+          ;
+          id="new"
+        >
+          NEW!
+        </div>
+
+        <div
+          onmouseover="showbrand()"
+          onclick="window.location.href='../mybrand/brand.html'"
+          ;
+          id="brand"
+        >
+          BRANDS
+        </div>
+
+        <div onmouseover="showexplore()">EXPLORE</div>
+
+        <div onmouseover="showevent()">EVENTS</div>
+
+        <div
+          onmouseover="showreward() "
+          onclick="window.location.href='../BlueRewards/index.html'
+        "
+        >
+          BLUEREWARDS
+        </div>
+
+        <div
+          onmouseover="showroutine()"
+          onclick="window.location.href='../routinepage/Routine.html'
+        "
+        >
+          ROUTINE REBOOT!
+        </div>
+      </div>
+    </nav>
+    <hr id="upperdropdown_hr" />
+
+    <!--Dropdown for shop-->
+
+    <div
+      onmouseover="showshop()"
+      onmouseout="hideshop('dropdown_shop')"
+      id="dropdown_shop"
+    >
+      <div class="category">
+        <ul>
+          <li style="color: black">BESTSELLERS</li>
+          <li type="none" value="SkinCare" id="SkinCare">
+            <a
+              href="/BlueMercury-Clone-Team-Practice/projectData/HTML/skinCare.html"
+              >SKINCARE</a
+            >
+          </li>
+          <li type="none" value="">
+            <a
+              href="/BlueMercury-Clone-Team-Practice/projectData/HTML/MakeUp.html"
+              >MAKEUP</a
+            >
+          </li>
+          <li type="none" value="">
+            <a
+              href="/BlueMercury-Clone-Team-Practice/projectData/HTML/Mens.html"
+              >MEN</a
+            >
+          </li>
+          <li type="none" value="">
+            <a href="/BlueMercury-Clone-Team-Practice/NewArrival/Bath&Body.html"
+              >BATH & BODY</a
+            >
+          </li>
+          <li type="none" value="">
+            <a
+              href="/BlueMercury-Clone-Team-Practice/projectData/HTML/Fragrance.html"
+              >FRAGRANCE</a
+            >
+          </li>
+          <li type="none" value="">
+            <a
+              href="/BlueMercury-Clone-Team-Practice/NewArrival/Tools&Accessories.html"
+              >TOOLS & ACCESSORIES
+            </a>
+          </li>
+          <li type="none" value="">
+            <a
+              href="/BlueMercury-Clone-Team-Practice/projectData/HTML/HairCare.html"
+              >HAIR CARE</a
+            >
+          </li>
+          <li type="none" value="">
+            <a
+              href="/BlueMercury-Clone-Team-Practice/projectData/HTML/SunCare.html"
+              >SUN CARE</a
+            >
+          </li>
+          <li type="none" value="">
+            <a
+              href="/BlueMercury-Clone-Team-Practice/projectData/HTML/Mens.html"
+              >MEN
+            </a>
+          </li>
+          <li type="none" value="Gifts" target="">
+            <a
+              href="/BlueMercury-Clone-Team-Practice/projectData/HTML/Gifts.html"
+              >GIFTS
+            </a>
+          </li>
+          <li type="none" value="">
+            <a
+              href="/BlueMercury-Clone-Team-Practice/NewArrival/newArrival.html"
+              >LAST CHANCE & OFFERS</a
+            >
+          </li>
+          <!-- <li >SKINCARE</li>
+    <li>MAKEUP</li>
+    <li>HAIR CARE</li>
+    <li>BATH & BODY</li>
+    <li>FRAGRANCE</li>
+    <li>TOOLS & ACCESSORIES</li>
+    <li>HOME & LIFESTYLE </li>
+    <li>SUN CARE</li>
+    <li>MEN</li>
+    <li>GIFTS</li>
+    <li>LAST CHANCE & OFFERS </li> -->
+        </ul>
+        <hr />
+      </div>
+
+      <div class="bycategory">
+        <ul>
+          <li style="color: black">BY CATEGORY</li>
+          <li>Shop All</li>
+          <li>Makeup</li>
+          <li>Hair Care</li>
+          <li>Bath & Body</li>
+          <li>Fragrance</li>
+          <li>Tools & Accessories</li>
+        </ul>
+      </div>
+
+      <div class="bybrand">
+        <ul>
+          <li style="color: black">BY BRAND</li>
+          <li>Augustinus Bader</li>
+          <li>Chantecaille</li>
+          <li>Dr. Barbara Sturm</li>
+          <li>Dyson</li>
+          <li>La Mer</li>
+          <li>Lune+Aster</li>
+          <li>M-61</li>
+          <li>Olaplex</li>
+          <li>Sisley-Paris</li>
+          <li>Skinceuticals</li>
+          <li>Tom Forder</li>
+          <li>Trish McEvoy</li>
+        </ul>
+      </div>
+      <div class="dropdown_img">
+        <img
+          src="C:\Users\Amit\Desktop\Bluemercury-Project-main\mybrand\pic\new.png"
+          alt=""
+        />
+        <h3>The Celebration Edit</h3>
+        <p>something for everyone in a cozy sweater knit bag</p>
+      </div>
+    </div>
+
+    <!--Dropdown for new-->
+    <div onmouseover="shownew()" onmouseout="hidenew()" id="new_box">
+      <hr />
+      <div id="dropdown_new">
+        <div class="newcategory">
+          <ul>
+            <li style="color: black">BY CATEGORY</li>
+            <li>Shop All</li>
+            <li>Skincare</li>
+            <li>Makeup</li>
+            <li>Hair Care</li>
+            <li>Bath & Body</li>
+            <li>Fragrance</li>
+            <li>Tools & Accessories</li>
+            <li>Gifts</li>
+          </ul>
+        </div>
+        <div class="newcategory_img1">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/global_images-195893305391-4_825x_b99f0590-f9fd-4047-8ffa-2f1d1c93c989_303x303.webp?v=1672249010"
+            alt=""
+          />
+          <h3>New to Bluemercury: Nood</h3>
+
+          <p>The solution for at-home permanent hair removal</p>
+        </div>
+
+        <div class="newcategory_img2">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/global_images-850026597219-4_825x_c86786a8-1374-4c8e-aef2-4602faa320fd_303x303.webp?v=1670343441"
+            alt=""
+          />
+          <h3>The Celebration Edit</h3>
+          <p>Look your best during party season. $149, $448 value!</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Dropdown for Brand-->
+    <div onmouseover="showbrand()" onmouseout="hidebrand()" id="brand_box">
+      <hr />
+      <div id="dropdown_brand">
+        <ul>
+          <li style="color: black">SHOP ALL BRANDS</li>
+          <li>THE CACHE</li>
+          <li>CONSCIOUS BEAUTY</li>
+        </ul>
+        <ul>
+          <li style="color: black">BESTSELLERS</li>
+          <li>Augustinus Bader</li>
+          <li>Chantecaille</li>
+          <li>Dr. Barbara Sturm</li>
+          <li>Dyson</li>
+          <li>La Mer</li>
+          <li>Lune+Aster</li>
+          <li>M-61</li>
+          <li>Olaplex</li>
+          <li>Sisley-Paris</li>
+          <li>SkinCeuticals</li>
+          <li>Tom Ford</li>
+          <li>Trish McEvoy</li>
+        </ul>
+
+        <ul>
+          <li style="color: black">#NEWATBLUE</li>
+          <li>HigherDose</li>
+          <li>Irene Forte</li>
+          <li>Maison La Bougie</li>
+          <li>Nood</li>
+          <li>Ogee</li>
+          <li>Ourself</li>
+          <li>Pat McGrath Labs</li>
+          <li>Plantkos</li>
+          <li>U Beauty</li>
+          <li>WellInsulated</li>
+          <li>Ziip</li>
+          <li>Zuvi</li>
+        </ul>
+        <ul>
+          <li style="color: black">WELLNESS</li>
+          <li>Alo</li>
+          <li>Bala</li>
+          <li>Canopy</li>
+          <li>Costa Brazil</li>
+          <li>Furtuna Skin</li>
+          <li>Indie Lee</li>
+          <li>NuFace</li>
+          <li>Odacité</li>
+          <li>Osea</li>
+          <li>Slip</li>
+          <li>Tata Harper</li>
+          <li>vVardis</li>
+        </ul>
+
+        <ul>
+          <li style="color: black">DIVERSE FOUNDED</li>
+          <li>AAPI Founded</li>
+          <li>Black Founded</li>
+          <li>Hispanic Founded</li>
+          <li>Women Founded</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Dropdown for explore-->
+
+    <div
+      onmouseover="showexplore()"
+      onmouseout="hideexplore()"
+      id="explore_box"
+    >
+      <hr />
+      <div id="dropdown_explore">
+        <div class="explorecategory">
+          <ul>
+            <li style="color: black">FEATURED</li>
+            <li>#ExclusivelyBlue</li>
+            <li>Blue Notes</li>
+            <li>Buying Guides</li>
+            <li>Conscious Beauty</li>
+            <li>Routine Reboot</li>
+            <li>Routine Reboot</li>
+            <li>The Founders Series</li>
+            <li>Wedding Essentials</li>
+            <li>MORE</li>
+          </ul>
+        </div>
+        <div class="explorecategory_img1">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/routine-reboot_eae729ea-9955-4560-9b85-330496461e03_303x303.jpg?v=1672412978"
+            alt=""
+          />
+          <h3>Routine Reboot</h3>
+          <p>Shop All Routines</p>
+        </div>
+        <div class="explorecategory_img2">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/The_Cache_FeaturedProduct1_303x303.jpg?v=1664567534"
+            alt=""
+          />
+          <h3>New to Bluemercury: Nood</h3>
+
+          <p>The solution for at-home permanent hair removal</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Dropdown for Event-->
+
+    <div onmouseover="showevent()" onmouseout="hideevent()" id="event_box">
+      <hr />
+      <div id="dropdown_event">
+        <div class="eventcategory_img1">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/masterclass_303x303.webp?v=1668011526"
+            alt=""
+          />
+          <h3>New to Bluemercury: Nood</h3>
+          <p>The solution for at-home permanent hair removal</p>
+        </div>
+        <div class="eventcategory_img2">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/Come_See_Us_Nav_Flyout_303x303.jpg?v=1666964048"
+            alt=""
+          />
+          <h3>New to Bluemercury: Nood</h3>
+          <p>The solution for at-home permanent hair removal</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Dropdown for BLUEREWARDS -->
+
+    <div onmouseover="showreward()" onmouseout="hidereward()" id="reward_box">
+      <hr />
+      <div id="dropdown_reward">
+        <div class="rewardcategory">
+          <ul>
+            <li style="color: black">MY ACCOUNT</li>
+            <li>Account Overview</li>
+            <li>My Purchases</li>
+            <li>My BlueRewards</li>
+            <li>My Wishlist</li>
+            <li>Details + Preferences</li>
+          </ul>
+        </div>
+        <div class="reward_img">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/bluerewards_2_303x303.jpg?v=1635345372"
+            alt=""
+          />
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <!--Dropdown for ROUTINE REBOOT -->
+
+    <div
+      onmouseover="showroutine()"
+      onmouseout="hideroutine()"
+      id="routine_box"
+    >
+      <hr />
+      <div id="dropdown_routine">
+        <div class="routine_img1">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/routine-reboot_303x303.jpg?v=1659115615"
+            alt=""
+          />
+          <h3>Shop All Routines</h3>
+        </div>
+        <div class="routine_img2">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/New_Years_Res_Horiz_59a6f7d7-f0e5-4b35-b178-ea38902b8aa8_303x303.jpg?v=1672347769"
+            alt=""
+          />
+          <h3>The “New Year, New You” Routine</h3>
+          <p>Start 2023 with a regimen reset</p>
+        </div>
+        <div class="routinecategory">
+          <ul>
+            <li style="color: black">MY ACCOUNT</li>
+            <li>Shop All</li>
+            <li>New Year, New You</li>
+            <li>RéVive Renewal Essentials</li>
+            <li>Is this My Home or a Luxury Spa?</li>
+            <li>Head for the Hills</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div >
+    </div>
+    <div id="signup" class="m-auto text-center mt-5" style="max-width: 500px">
+      <h1>LOGIN</h1>
+      <p id="heading" class="fs-5">
+        Please enter your e-mail and password
+      </p>
+      <form class="d-flex flex-column m-auto gap-3">
+        <input type="email" id="email" placeholder="E-mail" required/>
+        <input type="password" id="password" placeholder="Enter password" required/>
+        <input
+          type="submit"
+          value="LOGIN"
+          class="w-50 m-auto fw-semibold"
+        />
+      </form>
+      <p class="mt-3">
+        Don't have an account? 
+        <a href="./Signup.html" class="fs-6">Create one</a></p>
+      </p>
+    </div>
+  </body>
+  <script src="./js/Login.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"
+  ></script>
+</html>

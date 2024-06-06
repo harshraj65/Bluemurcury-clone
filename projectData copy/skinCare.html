@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Care</title>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,400&family=Open+Sans:ital,wght@0,400;1,700&family=Poppins:ital,wght@0,700;1,100&display=swap'); </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:ital,wght@0,400;1,700&family=Poppins:ital,wght@0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./CSS/skincare.css">
+<link rel="stylesheet" href="./CSS/upper.css">
+
+<script src="https://kit.fontawesome.com/6c1f5c4092.js" crossorigin="anonymous"
+></script>
+</head>
+<body>
+
+    <nav id="main_nav">
+        <div class="top_part">
+            <div class="location">
+                <a href="http://www.google.com">
+                    <i class="fa fa-map-marker" style="font-size:24px"></i>
+                    STORE & SPA LOCATOR
+                  </a>
+            </div>
+            <div class="logo">
+                <a href="">
+                   <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/bluemercury-logo_1216x.png?v=1648743182" alt="">
+                </a>
+            </div>
+             <div class="nav_item">
+              <div class="wishlist" >
+                <i class="fa fa-heart" style="font-size:22px;" ></i>
+                <span> Wishlist</span>
+              </div>
+              <div class="search">
+                <i class="fa fa-search"style="font-size:22px;"  aria-hidden="true"></i>
+                   <span>Search</span>
+                
+              </div>
+              <div class="signin">
+                <i class="fa fa-user-circle" style="font-size:22px;"></i>
+                <span>Sign in/up</span>
+              </div>
+              <div class="bag">
+    
+                <i class="fa fa-shopping-bag" style="font-size:22px;" aria-hidden="true"></i>
+                <a href="../Bag page/ProductPage.html"><span>  Bag</span></a>
+                  
+              </div>
+             </div>
+        </div>
+        
+    
+        <div id="dropdown">
+          <div onmouseover="showshop()" onclick="window.location.href='./Shop.html'";id="shop">SHOP</div>
+ 
+      <div  onmouseover="shownew()" onclick="window.location.href='../NewArrival/'";
+      id="new"  >NEW!</div> 
+ 
+      <div onmouseover="showbrand()" onclick="window.location.href='../mybrand/brand.html'";
+        id="brand">BRANDS</div> 
+ 
+      <div  onmouseover="showexplore()" onclick="window.location.href=''";
+      >EXPLORE   </div>
+ 
+      <div onmouseover="showevent()" onclick="location.href=''";
+      >EVENTS</div>
+ 
+      <div onmouseover="showreward()" onclick="location.href='../BlueRewards/index.html'";
+      >BLUEREWARDS</div>
+ 
+      <div onmouseover="showroutine()" onclick="location.href='../routinepage/Routine.html'";
+      >ROUTINE REBOOT!</div>
+ </div>
+       </nav>
+       <hr id="upperdropdown_hr">
+       
+    
+    <!--Dropdown for shop--> 
+    
+      <div
+      onmouseover="showshop()"
+       onmouseout="hideshop('dropdown_shop')"  id="dropdown_shop">
+    <div class="category">
+      <ul >
+        <li >BESTSELLERS</li>
+        <li>Augustinus Bader</li>
+        <li>Chantecaille</li>
+        <li>Dr. Barbara Sturm</li>
+        <li>Dyson</li>
+        <li>La Mer</li>
+        <li>Lune+Aster</li>
+        <li>M-61</li>
+        <li>Olaplex</li>
+        <li>Sisley-Paris</li>
+        <li>SkinCeuticals</li>
+        <li>Tom Ford</li>
+        <li>Trish McEvoy</li>
+      </ul>
+      <hr>
+    </div>
+     
+    <div class="bycategory">
+      <ul>
+        <li >BY CATEGORY</li>
+        <li >Shop All</li>
+        <li>Makeup</li>
+        <li>Hair Care</li>
+        <li>Bath & Body</li>
+        <li>Fragrance</li>
+        <li>Tools & Accessories</li>
+        <li>Sun Care</li>
+        <li>Skin Care</li>
+      </ul>
+    </div> 
+    
+    <div class="bybrand">
+    <ul>
+      <li>BY BRAND</li>
+      <li >Augustinus Bader</li>
+      <li>Chantecaille</li>
+      <li>Dr. Barbara Sturm</li>
+      <li>Dyson </li>
+      <li>La Mer</li>
+      <li>Lune+Aster</li>
+      <li >M-61 </li>
+      <li>Olaplex</li>
+      <li>Sisley-Paris</li>
+      <li>Skinceuticals </li>
+      <li>Tom Forder</li>
+      <li>Trish McEvoy</li>
+    </ul>
+    </div>
+    <div class="dropdown_img">
+      <img src="C:\Users\Amit\Desktop\Bluemercury-Project-main\mybrand\pic\new.png" alt="">
+      <h3>The Celebration Edit</h3>
+      <p>something for everyone in a cozy sweater knit bag</p>
+    </div>
+      </div>
+    
+    
+    
+      <!--Dropdown for new--> 
+      <div  onmouseover="shownew()"
+      onmouseout="hidenew()" 
+       id="new_box">
+        <hr>
+      <div
+      id="dropdown_new">
+    <div class="newcategory">
+      <ul >
+        <li >BY CATEGORY</li>
+        <li >Shop All</li>
+        <li>Skincare</li>
+        <li>Makeup </li>
+        <li>Hair Care</li>
+        <li>Bath & Body</li>
+        <li>Fragrance</li>
+        <li>Tools & Accessories </li>
+        <li>Gifts</li>
+      </ul>
+    </div>
+    <div class="newcategory_img1">
+      <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/global_images-195893305391-4_825x_b99f0590-f9fd-4047-8ffa-2f1d1c93c989_303x303.webp?v=1672249010" alt="">
+      <h3> New to Bluemercury: Nood</h3>
+       
+      <p>  The solution for at-home permanent hair removal</p>
+    </div>
+    
+    <div class="newcategory_img2">
+      <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/global_images-850026597219-4_825x_c86786a8-1374-4c8e-aef2-4602faa320fd_303x303.webp?v=1670343441" alt="">
+      <h3> The Celebration Edit</h3>
+      <p> Look your best during party season. $149, $448 value!</p>
+    </div>
+    </div>
+    </div>
+    
+     <!--Dropdown for Brand--> 
+     <div  onmouseover="showbrand()"
+     onmouseout="hidebrand()" 
+      id="brand_box">
+       <hr>
+     <div id="dropdown_brand">
+      <ul >
+        <li >SHOP ALL BRANDS</li>
+        <li>THE CACHE</li>
+          <li>CONSCIOUS BEAUTY</li>
+      </ul>
+      <ul >
+        <li >BESTSELLERS</li>
+        <li>Augustinus Bader</li>
+        <li>Chantecaille</li>
+        <li>Dr. Barbara Sturm</li>
+        <li>Dyson</li>
+        <li>La Mer</li>
+        <li>Lune+Aster</li>
+        <li>M-61</li>
+        <li>Olaplex</li>
+        <li>Sisley-Paris</li>
+        <li>SkinCeuticals</li>
+        <li>Tom Ford</li>
+        <li>Trish McEvoy</li>
+      </ul>
+     
+     
+       <ul>
+    <li > #NEWATBLUE</li>
+    <li> HigherDose</li>
+    <li>Irene Forte</li>
+    <li>Maison La Bougie</li>
+    <li> Nood</li>
+    <li>Ogee</li>
+    <li> Ourself</li>
+    <li>Pat McGrath Labs</li>
+    <li>Plantkos</li>
+    <li>U Beauty</li>
+    <li>WellInsulated</li>
+    <li>Ziip</li>
+    <li>Zuvi</li>
+       </ul>
+    <ul>
+      <li > WELLNESS</li>
+      <li> Alo</li>
+      <li>Bala</li>
+      <li>Canopy</li>
+      <li> Costa Brazil</li>
+      <li>Furtuna Skin</li>
+      <li> Indie Lee</li>
+      <li>NuFace</li>
+      <li>Odacité</li>
+      <li>Osea</li>
+      <li>Slip</li>
+      <li>Tata Harper</li>
+      <li>vVardis</li>
+         </ul>
+    
+     <ul>
+    <li> DIVERSE FOUNDED</li>
+    <li>AAPI Founded</li>
+    <li>Black Founded</li>
+    <li>Hispanic Founded</li>
+    <li>Women Founded</li>
+     </ul>
+    </div>
+    </div>
+    
+    <!--Dropdown for explore--> 
+    
+    
+    
+    
+    <div  onmouseover="showexplore()"
+     onmouseout="hideexplore()" 
+      id="explore_box">
+       <hr>
+     <div
+     id="dropdown_explore">
+    <div class="explorecategory">
+      
+     <ul >
+       <li> FEATURED</li>
+       <li >#ExclusivelyBlue</li>
+       <li>Blue Notes</li>
+       <li>Buying Guides </li>
+       <li>Conscious Beauty</li>
+       <li>Routine Reboot</li>
+       <li>Routine Reboot</li>
+       <li> The Founders Series</li>
+       <li>Wedding Essentials</li>
+       <li>MORE</li>
+     </ul>
+    </div>
+    <div class="explorecategory_img1">
+     <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/routine-reboot_eae729ea-9955-4560-9b85-330496461e03_303x303.jpg?v=1672412978" alt="">
+     <h3>Routine Reboot</h3>
+     <p>Shop All Routines</p>
+    </div>
+    <div class="explorecategory_img2">
+      <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/The_Cache_FeaturedProduct1_303x303.jpg?v=1664567534" alt="">
+      <h3> New to Bluemercury: Nood</h3>
+       
+      <p>  The solution for at-home permanent hair removal</p>
+     </div>
+    
+    </div>
+    </div>
+    
+    
+    
+    <!--Dropdown for Event--> 
+    
+    <div  onmouseover="showevent()"
+     onmouseout="hideevent()" 
+      id="event_box">
+          <hr>
+         <div id="dropdown_event">
+    
+        <div class="eventcategory_img1">
+        <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/masterclass_303x303.webp?v=1668011526" alt="">
+         <h3> New to Bluemercury: Nood</h3>
+          <p>  The solution for at-home permanent hair removal</p>
+        </div>
+         <div class="eventcategory_img2">
+       <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/Come_See_Us_Nav_Flyout_303x303.jpg?v=1666964048" alt="">
+        <h3> New to Bluemercury: Nood</h3>
+        <p>  The solution for at-home permanent hair removal</p>
+         </div>
+    
+        </div>
+    </div>
+    
+    
+    <!--Dropdown for BLUEREWARDS --> 
+    
+    <div  onmouseover="showreward()"
+     onmouseout="hidereward()" 
+      id="reward_box">
+          <hr>
+            <div id="dropdown_reward">
+            <div class="rewardcategory">
+                   <ul>
+                    <li style="color: black;">MY ACCOUNT</li>
+                    <li>Account Overview</li>
+                    <li>My Purchases</li>
+                    <li>My BlueRewards</li>
+                    <li>My Wishlist</li>
+                    <li>Details + Preferences</li>
+                   </ul>
+            </div>
+            <div class="reward_img">
+          <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/bluerewards_2_303x303.jpg?v=1635345372" alt="">
+              <h3></h3>
+              <p></p>
+            </div>
+    
+             </div>
+    </div>
+    
+    
+    <!--Dropdown for ROUTINE REBOOT --> 
+    
+    
+    <div  onmouseover="showroutine()"
+     onmouseout="hideroutine()" 
+      id="routine_box">
+          <hr>
+            <div id="dropdown_routine">
+            
+            <div class="routine_img1">
+          <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/routine-reboot_303x303.jpg?v=1659115615" alt="">
+              <h3>Shop All Routines</h3>
+            </div>
+            <div class="routine_img2">
+              <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/New_Years_Res_Horiz_59a6f7d7-f0e5-4b35-b178-ea38902b8aa8_303x303.jpg?v=1672347769" alt="">
+                  <h3>The “New Year, New You” Routine</h3>
+                  <p>Start 2023 with a regimen reset</p>
+                </div>
+            <div class="routinecategory">
+              <ul>
+               <li >MY ACCOUNT</li>
+               <li>Shop All</li>
+               <li>New Year, New You</li>
+               <li>RéVive Renewal Essentials</li>
+               <li>Is this My Home or a Luxury Spa?</li>
+               <li>Head for the Hills</li>
+              </ul>
+       </div>
+             </div>
+    </div>
+    
+    
+    <!--Dropdown for Offer--> 
+        <div id="offer">
+          <p class="item-1">Free Gifts with purchase. Browse Now ></p>
+    
+          <p class="item-2">Free Shipping for BlueReward Members</p>
+          
+          <p class="item-3">Free Samples with all Orders</p>
+        </div>
+    
+    
+
+
+    <!-- ******************** shop data start from here  ******************** -->
+    <div id="Detailed-data">
+        <div id="Display-Image">
+            <div class="cart-img-container">
+                <div class="small-img-container">
+                   <img src="" alt="">
+                   <img src="" alt="">
+                </div>
+                <div class="target-img-container">
+                  <img  src="" alt="">
+                </div>
+             </div>
+             <div id="products-details">
+    
+             </div>
+        </div>
+       
+    </div>
+    <div id="product_Info"></div>
+   <div id="outer">
+       <div id ="filter">
+        <div id="category">
+            <div>
+                <h3>SkinCare Category</h3>
+                <p>Select one of the narrow result</p>
+                <hr>
+
+                <div id="category">
+                  <li><a href="./skinCare.html">Skincare</a></li>
+                  <li><a href="./MakeUp.html">Makeup</a></li>
+                  <li><a href="./HairCare.html">Hair Care</a></li>
+                  <li><a href="./Barh&Body.html">Bath & Body</a></li>
+                  <li><a href="./Fragrance.html">Fragrance</a></li>
+                  <li><a href="./SunCare.html">Sun Care</a></li>
+                  <li><a href="./Mens.html">Men</a></li>
+                  <li><a href="./Mens.html">Gifts</a></li>
+      
+                </div>
+            </div>
+           
+        </div>
+
+        <div id="brands">
+            <h3>BY BRANDS</h3>
+            <li>All Brands</li>
+            <li>Augustinus Bader</li>
+            <li>Kiehl's Since 1851</li>
+            <li>La Mer</li>
+            <li>Dr. Barbara Sturm</li>
+            <li>M-61</li>
+            <li>Costa Brazil</li>
+            <li>Supergoop!</li>
+            <li>SkinCeuticals</li>
+            <li>RéVive</li>
+            <li>111SKIN</li>
+
+        </div>
+        <div id="benefits">
+            <h3>Benefits</h3>
+            <li>Anti-Aging</li>
+            <li>Brighting</li>
+            <li>Anti Pollution</li>
+        </div>
+
+        <div id = "concern">
+            <h3>Concern</h3>
+            <li>Dark-Circle</li>
+            <li>Ancne And Blemishes</li>
+            
+
+        </div>
+
+        <div id="price">
+            <h3>Price</h3>
+            <li>All Products</li>
+            <li>$0 To $50</li>
+            <li>$50 To $100</li>
+            <li>$100 To $200</li>
+            <li>$200 To $ 500</li>
+            <li>$500 +</li>
+
+        </div>
+       </div>
+
+
+        <div id="skincare">
+           
+        <div id="top">
+            <h3>SKINCARE</h3>
+            <div id="sort">
+                <span>SORT BY</span>
+                <select name="" id="Select">
+                    <option value="Featured">Featured</option> 
+                    <option value="New Arrival">New Arrival</option>
+                    <option value="Best Seller">Best Seller</option>
+                    <option value="low-to-high">Price,Low to High</option>
+                    <option value="high-to-low">Price,High-to-Low</option>
+                </select>
+            </div>
+           
+        </div>
+        <hr>
+            <div  id = 'container'>
+                <!-- <hr> -->
+                    <!-- <div>
+
+                    </div> -->
+            </div>
+            <div id="add-to-cart-modal"></div>
+        </div>
+    
+   </div>
+
+
+       <!--Footer-->
+       <footer class="footer-part">
+        <div class="newsletter">
+          <p>Get Expert Beauty Insight & Offers</p>
+          <form id="footer-mail-collect" onsubmit="overlaymsg(event)">
+            <div id="mail-submission-success-overlay">
+              <div>
+                <!-- <img src="https://i2.wp.com/i.pinimg.com/originals/70/a5/52/70a552e8e955049c8587b2d7606cd6a6.gif"/> -->
+                <img
+                  src="https://thumbs.gfycat.com/ShyCautiousAfricanpiedkingfisher-max-1mb.gif"
+                  alt="successful"
+                />
+                <p id="success-msg">You will hear from us soon!</p>
+                <div onclick="overlayMsgHide()" id="hide-overlay">Done</div>
+              </div>
+            </div>
+            <input
+              class="footer-mail e-mail"
+              id="newsletter-mail-input"
+              name="e-mail"
+              type="email"
+              placeholder="EMAIL ADDRESS"
+            />
+            <button id="arrow-submit-btn" type="submit">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </form>
+          <p>
+            To learn more about how we use your information and your rights, see
+            Privacy Note
+          </p>
+          <p class="icons">
+            <a href="https://twitter.com/bluemercury" target="_blank"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+            <a href="https://www.pinterest.com/bluemercury/" target="_blank"
+              ><i class="fa fa-pinterest-p" aria-hidden="true"></i
+            ></a>
+            <a href="https://facebook.com/bluemercury" target="_blank"
+              ><i class="fa fa-facebook" aria-hidden="true"></i
+            ></a>
+            <a href="https://instagram.com/bluemercury" target="_blank"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCrgUXfV7IIFllEQMbzd9J3A"
+              target="_blank"
+              ><i class="fa fa-youtube-play" aria-hidden="true"></i
+            ></a>
+          </p>
+          <p>Copyright 2021 bluemercury. All Rights Reserved.</p>
+        </div>
+  
+        <div class="footer-navwrap">
+          <div class="bluemercury-links">
+            <h2>Bluemercury</h2>
+            <ul>
+              <li>
+                <a href="#">Our Company</a>
+              </li>
+              <li>
+                <a href="#">Store Locator</a>
+              </li>
+              <li>
+                <a href="#">In-Store & Online Events</a>
+              </li>
+              <li>
+                <a href="#">Spa Menu</a>
+              </li>
+              <li>
+                <a href="#">Press</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Vendor Submissions</a>
+              </li>
+              <li>
+                <a href="#">Diversity & Inclusion</a>
+              </li>
+            </ul>
+          </div>
+          <div class="myaccount-links">
+            <h2>My Account</h2>
+            <ul>
+              <li>
+                <a href="#">My Account</a>
+              </li>
+              <li>
+                <a href="#">BlueRewards</a>
+              </li>
+              <li>
+                <a href="#">Gift Card Balance Checker</a>
+              </li>
+            </ul>
+          </div>
+          <div class="customerservice-links">
+            <h2>Customer Service</h2>
+            <ul>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Help & FAQ</a>
+              </li>
+              <li>
+                <a href="#">Shipping, Returns & Exchanges</a>
+              </li>
+              <li>
+                <a href="#">Gift Cards</a>
+              </li>
+              <li>
+                <a href="#">Offers & Promotions</a>
+              </li>
+              <li>
+                <a href="#">Klarna</a>
+              </li>
+            </ul>
+          </div>
+          <div class="resources-links">
+            <h2>Resources</h2>
+            <ul>
+              <li>
+                <a href="#">Terms & Conditions</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Accessiblility</a>
+              </li>
+              <li>
+                <a href="#">COVID-19 Updates</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+  
+</body>
+<script src="./Scripts/skinCare.js" defer></script>
+<script src="./Scripts/upper.js" defer></script>
+
+
+</html>

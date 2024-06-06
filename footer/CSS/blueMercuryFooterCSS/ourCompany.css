@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Poppins&family=Roboto+Condensed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #12284c;
+  background: #fff;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+#blueRewardHeader {
+  display: flex;
+  margin: 20px 50px 20px 50px;
+  justify-content: space-between;
+}
+
+.title {
+  color: rgb(96, 122, 158);
+}
+.icon {
+  margin-left: 20px;
+}
+
+.rightHeader {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar > p {
+  padding: 10px 30px 10px 30px;
+}
+
+.slider {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #d7ebf2;
+}
+
+.slider > a {
+  text-decoration: none;
+}
+
+/* Main Part */
+.oc {
+  text-align: center;
+  padding: 30px;
+  border-bottom: 1px solid lightgrey;
+  background-color: #f9fdff;
+}
+
+.content {
+  width: 35%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.companyImage {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
+
+.companyImage > img {
+  border-radius: 80px;
+  height: 100%;
+  width: 100%;
+}
+
+.text {
+  margin-top: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.bmReward {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f3f8fa;
+  align-items: center;
+  margin: 40px 0 40px 0;
+  /* padding: 100px; */
+}
+.bmReward > div {
+  margin: auto;
+  text-align: center;
+  padding: 50px 0 90px 0;
+  font-size: 18px;
+  width: 300px;
+  height: 66px;
+}
+
+.bmReward > div > img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bmReward > div > a {
+  color: black;
+}
+
+.last {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.last > div {
+  text-align: center;
+}
+
+.last > div > img {
+  width: 350px;
+  height: 200px;
+}
+.contact > button {
+  background-color: #12284c;
+  padding: 10px;
+}
+
+.contact {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+}
+.contact > button > a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* Footer Part */
+.eventBox {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  padding: 30px;
+  margin-top: 50px;
+  border-bottom: 1px solid darkgray;
+  justify-content: space-between;
+}
+
+.eventBox > div {
+  width: 300px;
+  text-align: center;
+}
+
+.eventBox > div > a {
+  font-size: 13px;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.footer > div > h2 > span {
+  margin: 20px;
+}
+
+div.form > * {
+  padding-bottom: 15px;
+}
+
+div.form > u > input {
+  padding: 0;
+  margin-bottom: 15px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+  width: 80%;
+}
+
+.form > p {
+  font-size: 13px;
+}
+
+.bm > p > a {
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.account > p > a {
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.cs > p > a {
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.resources > p > a {
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}

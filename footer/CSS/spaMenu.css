@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Poppins&family=Roboto+Condensed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #12284c;
+  background: #fff;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+#spaHeader {
+  display: flex;
+  margin: 20px 50px 20px 50px;
+  justify-content: space-between;
+}
+
+.title {
+  color: rgb(96, 122, 158);
+}
+.icon {
+  margin-left: 20px;
+}
+
+.rightHeader {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar > p {
+  padding: 10px 30px 10px 30px;
+}
+
+.slider {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  background-color: #d7ebf2;
+}
+
+.slider > a {
+  text-decoration: none;
+}
+
+.bmSpa > h1 {
+  text-align: center;
+  font-family: normal;
+}
+
+.bmSpa > p {
+  text-align: center;
+}
+
+.spaPdf > a {
+  display: block;
+  margin: 50px;
+  color: black;
+  text-align: center;
+}
+
+.spaService {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  margin: auto;
+  margin-bottom: 80px;
+  width: 60%;
+}
+
+.content {
+  padding-top: 20%;
+}
+
+.spaService > :nth-child(odd) {
+  text-align: end;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.footer > div > h2 > span {
+  margin: 20px;
+}
+
+div.form > * {
+  padding-bottom: 15px;
+}
+
+div.form > u > input {
+  padding: 0;
+  margin-bottom: 15px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+  width: 80%;
+}
+
+.eventBox {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  padding: 30px;
+  margin-top: 50px;
+  border-bottom: 1px solid darkgray;
+  justify-content: space-between;
+}
+
+.eventBox > div {
+  width: 300px;
+  text-align: center;
+}
+
+.eventBox > div > a {
+  font-size: 13px;
+  color: black;
+}
+
+.form > p {
+  font-size: 13px;
+}
+
+.footer > div > h4 {
+  padding-bottom: 10px;
+}
+.bm > p > a {
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.account > p > a {
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.cs > p > a {
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.resources > p > a {
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+/* small screens */
+@media only screen and (min-width: 420px) and (max-width: 720px) {
+  .spaService {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

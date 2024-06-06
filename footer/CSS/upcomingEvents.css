@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Poppins&family=Roboto+Condensed&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #12284c;
+  background: #fff;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+#event {
+  display: flex;
+  margin: 20px 50px 20px 50px;
+  justify-content: space-between;
+}
+
+.title {
+  color: rgb(96, 122, 158);
+}
+.icon {
+  margin-left: 20px;
+}
+
+.rightHeader {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar > p {
+  padding: 10px 30px 10px 30px;
+}
+
+.slider {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #d7ebf2;
+}
+
+.slider > a {
+  text-decoration: none;
+}
+
+.content_1 {
+  padding-top: 64px;
+  padding-bottom: 0;
+  font-family: normal;
+  font-size: 22px;
+  text-align: center;
+}
+
+.content_2 {
+  padding-top: 55px;
+  padding-bottom: 0;
+  font-family: normal;
+  font-size: 20px;
+  text-align: center;
+}
+
+.body_1 {
+  display: grid;
+  margin: 80px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+.body_1 > div {
+  height: 500px;
+}
+
+.body_1 > :first-child > img {
+  height: 100%;
+  width: 100%;
+}
+
+.body_1 > :last-child {
+  padding-top: 30%;
+  padding-right: 80px;
+  height: 100%;
+  width: 100%;
+}
+
+.body_2 {
+  display: grid;
+  margin: 80px;
+  margin-top: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+.body_2 > div {
+  height: 500px;
+}
+
+.content_3 {
+  padding-top: 0;
+  padding-bottom: 40px;
+  font-family: normal;
+  font-size: 20px;
+  text-align: center;
+}
+
+.body_2 > :first-child > img {
+  height: 100%;
+  width: 100%;
+}
+
+.body_2 > :last-child {
+  padding-top: 28%;
+  padding-right: 80px;
+}
+
+.eventBox {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  padding: 30px;
+  margin-top: 50px;
+  border-bottom: 1px solid darkgray;
+  justify-content: space-between;
+}
+
+.eventBox > div {
+  width: 300px;
+  text-align: center;
+}
+
+.eventBox > div > a {
+  font-size: 13px;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.footer > div > h2 > span {
+  margin: 20px;
+}
+
+div.form > * {
+  padding-bottom: 15px;
+}
+
+div.form > u > input {
+  padding: 0;
+  margin-bottom: 15px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+  width: 80%;
+}
+
+.form > p {
+  font-size: 13px;
+}
+
+.bm > p > a {
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.account > p > a {
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.cs > p > a {
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.resources > p > a {
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+@media only screen and (min-width: 420px) and (max-width: 720px) {
+  .body_1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .body_2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

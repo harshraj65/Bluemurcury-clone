@@ -1,0 +1,21 @@
+input {
+  font-size: 14px;
+  padding: 10px 12px;
+}
+a,
+h1,
+h3,
+p {
+  color: #12284c;
+}
+input[type="submit"] {
+  background-color: #12284c;
+  color: white;
+}
+a:hover {
+  color: #12284c;
+}
+p {
+  font-size: 14px;
+  font-weight: 400;
+}

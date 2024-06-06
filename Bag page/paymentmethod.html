@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment method - bluemercury - Checkout</title>
+    <link rel="stylesheet" href="./Styles/paymentmethod.css" />
+  </head>
+  <body>
+    <div id="parent">
+      <!-- left side main div -->
+      <div id="child1">
+        <!-- logo image and links -->
+        <img
+          src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/blm-checkout-logo.png?129696"
+          alt=""
+        />
+        <div id="links">
+          <div><a href="ProductPage.html"> Cart &nbsp &nbsp > </a></div>
+          <div>
+            <a href="CustomerInfoPage.html">
+              &nbsp &nbsp Customer Information &nbsp &nbsp ></a
+            >
+          </div>
+          <div>
+            <a href="shippingmethod.html">
+              &nbsp &nbsp Shipping method &nbsp &nbsp ></a
+            >
+          </div>
+          <div>
+            <a href="paymentmethod.html">
+              &nbsp &nbsp Payment method &nbsp &nbsp
+            </a>
+          </div>
+        </div>
+        <!-- Displaying contact information stored in customerinfopage -->
+        <table id="infotable">
+          <tbody>
+            <tr id="boxtr"></tr>
+            <tr id="shiptotr"></tr>
+            <tr id="methodtr"></tr>
+          </tbody>
+        </table>
+        <p>By continuing, you agree to Bluemercury's Privacy Practices.</p>
+        <!-- Payment method table -->
+        <h3>Payment method</h3>
+        <p>All transactions are secure and encrypted.</p>
+        <table id="paytable">
+          <tbody>
+            <tr>
+              <td>
+                <input
+                  value="1"
+                  id="type_radio_1"
+                  name="type_radio"
+                  type="radio"
+                />
+              </td>
+              <td>CASH ON DELIVERY</td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  value="2"
+                  id="type_radio_2"
+                  name="type_radio"
+                  type="radio"
+                />
+              </td>
+              <td>CREDIT CARD</td>
+              <td>
+                <img
+                  src="https://cdn.knoji.com/images/ca/tacocabana-apple-pay-687198126780.jpg"
+                  alt=""
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Table to display the input fields if credit card is chosen -->
+        <table id="credittable">
+          <tbody id="paymenttable"></tbody>
+        </table>
+        <!-- Table to choose the shipping address -->
+        <h3>Billing address</h3>
+        <table id="billingtable">
+          <tbody>
+            <tr>
+              <td>
+                <input
+                  value="Same as shipping address"
+                  id="type2_radio_1"
+                  name="type2_radio"
+                  type="radio"
+                />
+                <label for="type2_radio_1">Same as shipping address</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  value="2"
+                  id="type2_radio_2"
+                  name="type2_radio"
+                  type="radio"
+                />
+                <label for="type2_radio_2"
+                  >Use a different billing address</label
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- form to be displayed if different billing address is chosen -->
+        <div id="billingadd" style="display: none">
+          <form>
+            <div>
+              <input type="text" id="country" placeholder="Country/Region" />
+            </div>
+            <div id="names">
+              <input type="text" id="firstname" placeholder="First name" />
+
+              <input type="text" id="lastname" placeholder="Last name" />
+            </div>
+            <div>
+              <input type="text" id="address1" placeholder="Address" />
+            </div>
+            <div>
+              <input
+                type="text"
+                id="address2"
+                placeholder="Apartment, suite, etc. (optional)"
+              />
+            </div>
+
+            <div id="place">
+              <input type="text" id="city" placeholder="City" />
+              <input type="text" id="state" placeholder="State" />
+              <input type="number" id="pincode" placeholder="Pincode" />
+            </div>
+          </form>
+        </div>
+        <!-- placing order -->
+        <div id="submitdiv">
+          <a href="shippingmethod.html">
+            <span>&nbsp < &nbsp </span> RETURN TO INFORMATION</a
+          >
+          <button id="myBtn">COMPLETE ORDER</button>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Order placed Successfully.</p>
+              <p>
+                We will keep you informed to your registered mail id for further
+                updates on your order.
+              </p>
+              <p>Happy Shopping! 😊</p>
+              <a href="../projectData copy/MakeUp.html">
+                <button>Continue Shopping</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <hr />
+          <p>All rights reserved bluemercury</p>
+        </div>
+      </div>
+      <!-- vertical line -->
+      <div class="vertical"></div>
+      <!-- Right side main div -->
+      <div id="child2">
+        <!-- table to append cart data's -->
+        <table>
+          <tbody id="carttablebody"></tbody>
+        </table>
+        <!-- promo code part -->
+        <div id="promo">
+          <input
+            type="text"
+            placeholder="Gift Card/Promo Code"
+            id="promocode"
+          />
+          <input type="submit" value="Apply" id="promobutton" />
+        </div>
+        <hr />
+        <!-- displaying total -->
+        <table id="cartottable">
+          <tbody>
+            <tr>
+              <td>Subtotal</td>
+              <td id="subtot"></td>
+            </tr>
+            <tr>
+              <td>Shipping</td>
+              <td>Free</td>
+            </tr>
+            <tr class="hrclass">
+              <td>Total</td>
+              <td id="totprice"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="./Scripts/paymentmethod.js"></script>
+</html>

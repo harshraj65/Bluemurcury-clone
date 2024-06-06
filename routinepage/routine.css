@@ -1,0 +1,79 @@
+#parent{
+
+    width: 95%;
+    margin: auto;
+    /* border: 2px solid black; */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 35px;
+    
+}
+h1,h2{
+    font-weight: 400;
+    font-size: 48px;
+    color : #12284c;
+}
+    .card{
+        width: 51%;
+        margin: auto;
+        text-align: center;
+    }
+    .card~img{
+        width: 100%;
+    }
+    .imgBox{
+        display: flex;
+        justify-content: space-around;
+    }
+    .imgBox>img{
+        width: 48%;
+    }
+    h1 span:nth-child(2){
+        font-weight:800;
+        font-size: larger;
+    }
+    h1+h1{
+        font-weight:800;
+    /* font-size: larger; */
+    }
+    #you{
+        font-family: 'Kaushan Script', cursive;
+        font-family: 'Marck Script', cursive;
+        font-size: 60px;
+        /* margin: -10px; */
+    }
+    p{
+        font-size: 20px;
+        line-height: 30px;
+        color:#12284c;
+    }
+    li{
+        margin-bottom: 40px;
+    }
+    li>a{
+        font-size: 25px;
+        font-weight: 800;
+        text-decoration: none;
+        line-height: 30px;
+        color:#12284c;
+    }
+    hr{
+        width: 250px;
+        background-color:#12284c;
+        height: 2px;
+    }
+    #hover{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        color:#12284c;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 15px;
+    }
+    #hover>div>img+p ,h4 {
+        font-weight: bolder;
+    }
+    #hover>div p{
+        line-height: 20px;
+
+    }

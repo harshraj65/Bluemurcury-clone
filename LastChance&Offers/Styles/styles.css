@@ -1,0 +1,55 @@
+#slider,
+header {
+  display: flex;
+}
+header {
+  height: 28vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: -10px 0;
+}
+header p {
+  font-size: 2.7rem;
+  width: 500px;
+  text-align: center;
+  margin-top: 20px;
+}
+header h2 {
+  margin-bottom: -15px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6%;
+  padding: 0 5%;
+  max-width: 1000px;
+  justify-items: center;
+  margin: auto;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+}
+.container div {
+  height: 300px;
+}
+div > h1 {
+  font-weight: normal;
+  font-size: 2rem;
+}
+div > h2 {
+  text-decoration: underline;
+}
+div > p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.even {
+  text-align: right;
+}
+span {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 2.5rem;
+}

@@ -1,0 +1,126 @@
+#parent {
+    width: 80%;
+    margin: auto;
+    color: rgb(102, 102, 102);
+    font-family: "Montserrat Regular", sans-serif;
+  }
+  h3{
+    color: rgb(31,49,80);
+  }
+  h3 +p{
+    font-weight:400;
+    font-size: large;
+  }
+  #emptydiv{
+    width: 100px;
+    height: 100px;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+  }
+  #emptymsg{
+    width: 300px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color:rgb(18, 40, 76)
+  }
+  #emptybtn{
+    width: 220px;
+    padding: 15px;
+    font-weight: 400;
+    line-height: 14px;
+    color: white;
+    background-color: rgb(18, 40, 76);
+    border: none;
+    letter-spacing: 1px;
+  }
+  h1 {
+    padding-bottom: 20px;
+    color: rgb(18, 40, 76);
+  }
+  table {
+    width: 100%;
+  }
+  #td1 {
+    display: flex;
+  }
+  img {
+    width: 100px;
+  }
+  th {
+    text-align: left;
+    border-bottom: 0.1px solid rgb(220, 220, 220);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  td {
+    border-bottom: 0.1px solid rgb(220, 220, 220);
+    padding: 10px;
+  }
+  #totalfooter {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+  #totalfooter > button {
+    width: 30%;
+    margin-left: auto;
+  }
+  #gifts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    border-top: 0.5px solid rgb(220, 220, 220);
+    padding-top: 20px;
+  }
+  #gifts > div {
+    display: flex;
+  }
+  #gifts > div > p {
+    padding-top: -10px;
+    padding-left: 20px;
+  }
+  #gifts > div > button {
+    background-color: white;
+    border: none;
+    padding-bottom: 60px;
+    text-decoration: underline;
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+  }
+  #removebtn > button {
+    border: none;
+    text-decoration: underline;
+    background-color: white;
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+  }
+  
+  label + p {
+    padding-left: 22px;
+    padding-bottom: 20px;
+  }
+  a > button {
+    background-color: rgb(18, 40, 76);
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+    border: none;
+    margin-left: auto;
+    padding: 15px;
+    width: 300px;
+  }
+  td >button{
+   border-radius: 100px;
+   margin: 1px;
+   border: 1px solid rgb(102, 102, 102);
+   background-color: white;
+  }

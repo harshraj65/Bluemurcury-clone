@@ -1,0 +1,273 @@
+#parent {
+    display: flex;
+    color: rgb(102, 102, 102);
+    letter-spacing: 0.8px;
+  }
+  #child1 {
+    width: 60%;
+  }
+  #child2 {
+    width: 45%;
+    background-color: rgb(248, 248, 248);
+  }
+  #child2 > table {
+    margin: auto;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  #links {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  #footer {
+    width: 80%;
+    margin: auto;
+  }
+  h3 {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  #child1 > p {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  #infotable,
+  #billingtable,
+  #paytable {
+    border: 1px solid rgb(220, 220, 220);
+    width: 80%;
+    margin: auto;
+    height: 10%;
+  }
+  #inputdiv {
+    display: flex;
+    margin: auto;
+  }
+  #inputdiv > input {
+    width: 100%;
+  }
+  input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  #billingadd {
+    width: 80%;
+    margin: auto;
+  }
+  form {
+    width: 80%;
+    margin: auto;
+  }
+  div > input {
+    width: 93%;
+  }
+  #names {
+    display: flex;
+  }
+  #names > input {
+    width: 100%;
+  }
+  #place {
+    display: flex;
+  }
+  #place > input {
+    width: 100%;
+  }
+  #cardno,
+  #cardname {
+    width: 94.5%;
+  }
+  #carttext,
+  #sampletext {
+    text-align: left;
+  }
+  #cartimg,
+  #sampleimg {
+    width: 13%;
+    height: 13%;
+    border: 0.1px solid rgb(220, 220, 220);
+    border-radius: 7px;
+    margin-left: 50px;
+    margin-right: 30px;
+  }
+  #qty{
+    width: 20%;
+  }
+  #cartottable {
+    width: 70%;
+  }
+  #cartottable > tbody > tr > td {
+    padding: 10px;
+    color: rgb(18, 40, 76);
+    font-size: large;
+  }
+  #cartottable > tbody > tr > td:last-child {
+    text-align: end;
+  }
+  #cartottable > tbody > tr:last-child > td {
+    border-top: 1px solid rgb(220, 220, 220);
+  }
+  #credittable {
+    width: 80%;
+    margin: auto;
+  }
+  #submitdiv {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  #submitdiv + a {
+    padding-top: 30px;
+  }
+  .vertical {
+    border-left: 2px solid rgb(220, 220, 220);
+    height: 100%;
+    position: absolute;
+    left: 57%;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    font-size: large;
+  }
+  a:visited {
+    color: rgb(18, 40, 76);
+  }
+  #infotable > tbody > tr:not(:last-child) > td {
+    border-bottom: 1px solid rgb(220, 220, 220);
+  }
+  #paytable > tbody > tr:last-child > td {
+    border-top: 1px solid rgb(220, 220, 220);
+  }
+  #billingtable > tbody > tr:last-child > td {
+    border-top: 1px solid rgb(220, 220, 220);
+  }
+  #infotable > tbody > tr > td {
+    padding: 20px;
+  }
+  #paytable > tbody > tr > td {
+    padding: 20px;
+  }
+  #billingtable > tbody > tr > td {
+    padding: 20px;
+  }
+  #promo {
+    width: 80%;
+    margin: auto;
+    display: flex;
+  }
+  #promocode {
+    width: 270px;
+    padding: 15px;
+    font-size: medium;
+  }
+  #promobutton {
+    width: 210px;
+    padding: 17px;
+    background-color: rgb(18, 40, 76);
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+    margin-left: -10px
+  }
+  #promo + hr {
+    width: 70%;
+    border-top: 1px solid rgb(220, 220, 220);
+  }
+  #td1,
+  #td2 {
+    display: flex;
+    margin: auto;
+    left: 0;
+  }
+#myBtn{
+  background-color: rgb(18, 40, 76);
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+    padding: 25px;
+    margin-left: auto;
+}
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 120%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    color: rgb(18, 40, 76);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+  }
+  .modal-content>a >button{
+    background-color: rgb(18, 40, 76);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    padding: 15px;
+  }
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @media all and (max-width: 700px){
+    #parent {
+      display: block;
+      color: rgb(102, 102, 102);
+    }
+    #child1 {
+      width: 100%;
+    }
+    #child2 {
+      width: 100%;
+      background-color: rgb(248, 248, 248);
+    }
+    .vertical {
+     display: none;
+    }
+    #footer{
+      display: none;
+    }
+    input[type="submit"] {
+      padding: 1px;
+    }
+  }

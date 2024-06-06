@@ -1,0 +1,169 @@
+#parent {
+    display: flex;
+    color: rgb(102, 102, 102);
+  }
+  #child1 {
+    width: 60%;
+  }
+  #child2 {
+    width: 45%;
+    background-color: rgb(248, 248, 248);
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  #footer {
+    width: 80%;
+    margin: auto;
+  }
+  #links {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  #contacttable,
+  #shippingtable {
+    border: 2px solid rgb(230, 230, 230);
+    width: 80%;
+    margin: auto;
+    height: 18%;
+  }
+  #boxtr > td {
+    border-bottom: 2px solid rgb(230, 230, 230);
+  }
+  #shippingtable > tbody > tr:first-child > td {
+    border-bottom: 2px solid rgb(230, 230, 230);
+  }
+  #contacttable > tbody > tr > td {
+    padding: 20px;
+  }
+  h3 {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  #submitdiv {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  #submitdiv + a {
+    padding-top: 30px;
+  }
+  input[type="submit"] {
+    background-color: rgb(18, 40, 76);
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+    padding: 25px;
+    margin-left: auto;
+  }
+  .vertical {
+    border-left: 2px solid rgb(220, 220, 220);
+    height: 100%;
+    position: absolute;
+    left: 57%;
+  }
+  #promo {
+    width: 80%;
+    margin: auto;
+    display: flex;
+  }
+  #promocode {
+    width: 270px;
+    padding: 15px;
+    font-size: medium;
+  }
+  #promobutton {
+    width: 210px;
+    padding: 17px;
+    background-color: rgb(18, 40, 76);
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+    margin-left: -10px
+  }
+  #promo + hr {
+    width: 70%;
+    border-top: 1px solid rgb(220, 220, 220);
+  }
+  #td1,
+  #td2 {
+    display: flex;
+    margin: auto;
+    left: 0;
+  }
+  #child2 > table {
+    margin: auto;
+  }
+  input {
+    padding: 13px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  #carttext,
+  #sampletext {
+    text-align: left;
+  }
+  #cartimg,
+  #sampleimg {
+    width: 13%;
+    height: 13%;
+    border: 0.1px solid rgb(220, 220, 220);
+    border-radius: 7px;
+    margin-left: 50px;
+    margin-right: 30px;
+  }
+  #qty{
+    width: 20%;
+  }
+  #cartottable {
+    width: 70%;
+  }
+  #cartottable > tbody > tr > td {
+    padding: 10px;
+    color: rgb(18, 40, 76);
+    font-size: large;
+  }
+  #cartottable > tbody > tr > td:last-child {
+    text-align: end;
+  }
+  #cartottable > tbody > tr:last-child > td {
+    border-top: 1px solid rgb(220, 220, 220);
+  }
+  a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    font-size: large;
+  }
+  a:visited {
+    color: rgb(18, 40, 76);
+  }
+  @media all and (max-width: 700px){
+    #parent {
+      display: block;
+      color: rgb(102, 102, 102);
+    }
+    #child1 {
+      width: 100%;
+    }
+    #child2 {
+      width: 100%;
+      background-color: rgb(248, 248, 248);
+    }
+    .vertical {
+     display: none;
+    }
+    input[type="submit"] {
+      padding: 8px;
+    }
+  }

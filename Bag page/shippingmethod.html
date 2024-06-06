@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shipping method - bluemercury - Checkout</title>
+    <link rel="stylesheet" href="./Styles/shippingmethod.css" />
+  </head>
+  <body>
+    <div id="parent">
+      <!-- left side main div -->
+      <div id="child1">
+        <!-- logo image and links -->
+        <img
+          src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/blm-checkout-logo.png?129696"
+          alt=""
+        />
+        <div id="links">
+          <div><a href="ProductPage.html"> Cart &nbsp &nbsp > </a></div>
+          <div>
+            <a href="CustomerInfoPage.html">
+              &nbsp &nbsp Customer Information &nbsp &nbsp ></a
+            >
+          </div>
+          <div>
+            <a href="shippingmethod.html">
+              &nbsp &nbsp Shipping method &nbsp &nbsp ></a
+            >
+          </div>
+        </div>
+        <!-- Displaying contact information stored in customerinfopage -->
+        <h3>Contact Information</h3>
+        <table id="contacttable">
+          <tbody>
+            <tr id="boxtr"></tr>
+            <tr id="shiptotr"></tr>
+          </tbody>
+        </table>
+        <!-- Table to choose shipping method -->
+        <h3>Shipping method</h3>
+        <table id="shippingtable">
+          <tbody>
+            <tr>
+              <td>
+                <input
+                  value="1"
+                  id="type_radio_1"
+                  name="type_radio"
+                  type="radio"
+                />
+              </td>
+              <td>Ground Shipping (7-10 days)</td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  value="2"
+                  id="type_radio_2"
+                  name="type_radio"
+                  type="radio"
+                />
+              </td>
+              <td>Two-Day Shipping (Excludes PO Box or APO/FPO)</td>
+              <td>$10.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- footer part -->
+        <div id="submitdiv">
+          <a href="CustomerInfoPage.html">
+            <span>&nbsp < &nbsp </span> RETURN TO INFORMATION</a
+          >
+          <a href="paymentmethod.html">
+            <input type="submit" value="CONTINUE TO PAYMENT" />
+          </a>
+        </div>
+        <div id="footer">
+          <hr />
+          <p>All rights reserved bluemercury</p>
+        </div>
+      </div>
+      <!-- vertical line -->
+      <div class="vertical"></div>
+      <div id="child2">
+        <!-- table to append cart data's -->
+        <table>
+          <tbody id="carttablebody"></tbody>
+        </table>
+        <!-- promo code part -->
+        <div id="promo">
+          <input
+            type="text"
+            placeholder="Gift Card/Promo Code"
+            id="promocode"
+          />
+          <input type="submit" value="Apply" id="promobutton" />
+        </div>
+        <hr />
+        <!-- displaying total -->
+        <table id="cartottable">
+          <tbody>
+            <tr>
+              <td>Subtotal</td>
+              <td id="subtot"></td>
+            </tr>
+            <tr>
+              <td>Shipping</td>
+              <td id="shipfreeupd">Free</td>
+            </tr>
+            <tr class="hrclass">
+              <td>Total</td>
+              <td id="totprice"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./Scripts/shippingmethod.js"></script>

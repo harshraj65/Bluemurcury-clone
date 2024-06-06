@@ -1,5 +1,5 @@
 # Bluemercury Clone 
-Its a basic project of making a clone of Bluemercury website. Its a group project of 5 members.
+Its a basic project of making a clone of Bluemercury website. Its a group project of 3 members.
 
 ## Team Members
 1. Simant Gautam
